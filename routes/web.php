@@ -19,6 +19,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/about', function () {
     return view('about', [
+        "title" => "about",
         "name" => "Muhammad Verdiansyah",
         "email" => "verdiansyah1404@gmail.com",
         "image" => "phone.png"
@@ -26,9 +27,13 @@ Route::get('/about', function () {
 });
 
 Route::get('/', function () {
-    return view('home');
+    return view('home',[
+        "title" => "home"
+    ]);
 });
 
 Route::get('/blog', function () {
-    return view('posts');
+    return view('posts',[
+        "title" => "posts",
+    ]);
 });
