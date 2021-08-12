@@ -39,4 +39,4 @@ Route::get('/', function () {
 //method dari index postcontroller
 Route::get('/posts', [PostController::class, 'index']);
 //method dari show postcontroller
-route::get('posts/{slug}', [PostController::class, 'show']);
+Route::get('posts/{slug}', [PostController::class, 'show']);
